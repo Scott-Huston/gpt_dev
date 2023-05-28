@@ -56,10 +56,10 @@ print("Model is generating the PR. This may take a minute or two")
 response = openai.ChatCompletion.create(
   model="gpt-4",
   messages=[
-        {"role": "system", "content": system_message},
+        {"role": "system", "content": prompts.SYSTEM_MESSAGE},
         {"role": "user", "content": first_message},
-        {"role": "assistant", "content": question_responses},
-        {"role": "user", "content": f"{response_answer}\n{create_pr_message}"}
+        {"role": "assistant", "content": question_response},
+        {"role": "user", "content": f"{question_answer}\n{create_pr_message}"}
     ]
 )
 
