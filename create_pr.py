@@ -41,6 +41,7 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": first_message}
     ]
 )
+
 # TODO add logging of response
 
 question_response = get_response_content(response)
@@ -61,6 +62,8 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": f"{response_answer}\n{create_pr_message}"}
     ]
 )
+
+# TODO add logging of response
 
 create_pr_response = get_response_content(response)
 
