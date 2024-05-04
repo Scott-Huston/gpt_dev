@@ -13,7 +13,7 @@ V1 Overall flow:
 
 More granular view
 
-- (Done) Represent entire repo as block of text. Possibly this can be done better with sequential calls to the model summarizing relevant parts of each file or something
+- (Done) Represent entire repo as block of text. Possibly this can be done better with sequential calls to the model summarizing relevant parts of each file or something (RAG probably)
     - Github api to iterate through all files and get contents?
     - How does the repo chat thing that exists do this?
 
